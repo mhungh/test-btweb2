@@ -1,11 +1,11 @@
 package murach.email;
 
 import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
 
 import murach.business.User;
-import murach.data.UserDB;
+//import murach.data.UserDB;
 
 public class EmailListServlet extends HttpServlet  {
 
@@ -32,7 +32,7 @@ public class EmailListServlet extends HttpServlet  {
 
             // store data in User object and save User object in db
             User user = new User(firstName, lastName, email);
-            UserDB.insert(user);
+            // UserDB.insert(user);
 
             // set User object in request object and set URL
             request.setAttribute("user", user);

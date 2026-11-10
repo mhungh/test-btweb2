@@ -55,4 +55,36 @@ public class User implements Serializable {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getsearchMethod() {
+        return searchMethod;
+    }
+
+    public void setsearchMethod(String searchMethod) {
+        this.searchMethod = searchMethod;
+    }
+
+    public String getdateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setdateOfBirth(String dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    public String getreceiveAnn() {
+        return receiveAnn;
+    }
+
+    public void setreceiveAnn(String receiveAnn) {
+        this.receiveAnn = receiveAnn;
+    }
+
+    public String getcontactMethod() {
+        return contactMethod;
+    }
+
+    public void setcontactMethod(String contactMethod) {
+        this.contactMethod = contactMethod;
+    }
 }

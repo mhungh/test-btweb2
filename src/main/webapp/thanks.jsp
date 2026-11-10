@@ -20,7 +20,6 @@
     <span>${user.lastName}</span><br>
     <label>Date of Birth:</label>
     <span>${user.dateOfBirth}</span><br>
-
     <label>Your way of finding us:</label>
     <span>${user.searchMethod}</span><br>
     <label>Your response for receive announcements:</label>

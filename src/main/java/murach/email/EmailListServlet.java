@@ -26,12 +26,20 @@ public class EmailListServlet extends HttpServlet  {
             url = "/index.html";    // the "join" page
         } else if (action.equals("add")) {
             // get parameters from the request
+
+            // add: dateOfBirth, searchMethod, receiveAnn, contactMethod
             String firstName = request.getParameter("firstName");
             String lastName = request.getParameter("lastName");
             String email = request.getParameter("email");
+            String dateOfBirth = request.getParameter("dateOfBirth");
+            String searchMethod = request.getParameter("searchMethod");
+            String receiveAnn = request.getParameter("receiveAnn");
+            String contactMethod = request.getParameter("contactMethod");
+
 
             // store data in User object and save User object in db
-            User user = new User(firstName, lastName, email);
+            User user = new User(firstName, lastName, email, 
+            dateOfBirth, searchMethod, receiveAnn, contactMethod);
             // UserDB.insert(user);
 
             // set User object in request object and set URL

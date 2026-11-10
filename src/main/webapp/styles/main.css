@@ -9,7 +9,7 @@ h1 {
 }
 label {
     float: left;
-    width: 6em;
+    width: 13em;
     margin-bottom: 0.5em;
 }
 input[type="text"], input[type="email"] {

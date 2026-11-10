@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Murach's Java Servlets and JSP</title>
-    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
 </head>
 
 <body>
@@ -17,10 +18,15 @@
     <span>${user.firstName}</span><br>
     <label>Last Name:</label>
     <span>${user.lastName}</span><br>
+    <label>Date of Birth:</label>
+    <span>${user.dateOfBirth}</span><br>
 
-    <p>To enter another email address, click on the Back
-        button in your browser or the Return button shown
-        below.</p>
+    <label>Your way of finding us:</label>
+    <span>${user.searchMethod}</span><br>
+    <label>Your response for receive announcements:</label>
+    <span>${user.receiveAnn}</span><br>
+    <label>Your contact method:</label>
+    <span>${user.contactMethod}</span><br>
 
     <form action="" method="get">
         <input type="hidden" name="action" value="join">
@@ -28,4 +34,5 @@
     </form>
 
 </body>
+
 </html>

@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Murach's Java Servlets and JSP</title>
-    <link rel="stylesheet" href="styles/main.css" type="text/css"/>
+    <link rel="stylesheet" href="styles/main.css" type="text/css" />
 </head>
-<body>
-    <h1>Join our email list</h1>
-    <p>To join our email list, enter your name and
-        email address below.</p>
-    <form action="emailList" method="post">
-        <input type="hidden" name="action" value="add">
 
-        <label>Email:</label>
-        <input type="email" name="email" required><br>
+<body>
+    <header>
+        <img src="images.png" width="200px">
+        <h1>Survey</h1>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+    </header>
+    <form action="info" method="post">
+        <h1>Your information:</h1>
+        <input type="hidden" name="action" value="add">
 
         <label>First Name:</label>
         <input type="text" name="firstName" required><br>
@@ -21,9 +23,38 @@
         <label>Last Name:</label>
         <input type="text" name="lastName" required><br>
 
-        <label>&nbsp;</label>
-        <input type="submit" value="Join Now" id="submit">
+        <label>Email:</label>
+        <input type="email" name="email" required><br>
+
+        <label>Date of Birth:</label>
+        <input type="date" name="dateOfBirth" required><br>
+
+        <section>
+            <h1>How did you hear about us?</h1>
+            <p>
+                <input type="radio" name="searchMethod" value="srcEngine">Search Engine
+                <input type="radio" name="searchMethod" value="wordOfMouth">Word of mouth
+                <input type="radio" name="searchMethod" value="socialMedia">Social media
+                <input type="radio" name="searchMethod" value="other" checked>Other
+            </p>
+        </section>
+
+        <section>
+            <h1>Would you like to receive announcements about new CDs and special offers?</h1>
+            <p>
+                <input type="checkbox" name="receiveAnn" value="YES, I'd like that.">YES, I'd like that.<br>
+                <input type="checkbox" name="receiveAnn" value="YES, please send me email announcements.">YES, please
+                send me email announcements.<br>
+                <span>Please contact me by:</span>
+                <select name="contactMethod" multiple>
+                    <option value="email" selected>Email only</option>
+                    <option value="postal">Postal mail only</option>
+                    <option value="both">Email or postal mail</option>
+                </select>
+            </p>
+        </section>
+        <input type="submit" value="Submit" id="submit">
     </form>
 </body>
-</html>
 
+</html>
